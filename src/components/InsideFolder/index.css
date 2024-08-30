@@ -1,0 +1,78 @@
+/* .modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 500px;
+    max-width: 90%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal-close-button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.modal-body {
+    margin-bottom: 20px;
+}
+
+.modal-footer {
+    text-align: right;
+} */
+/* .leftbar-cont{
+    width: 17vw;
+    height: 100vh;
+    background-color: rgb(246, 246, 250);
+} */
+/* .actual-container{
+    border-top-left-radius: 20px;
+    width: 83vw;
+    height: 90vh;
+    overflow-y: auto;
+    background-color: white;
+} */
+/* .drive-container{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} */
+.file-container{
+    text-decoration: none;
+    box-sizing: border-box;
+    width: 100%;
+}
+.folder-container{
+    text-decoration: none;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.img-nothing{
+    margin: 20px;
+    width: 500px;
+    background-size: cover;
+}

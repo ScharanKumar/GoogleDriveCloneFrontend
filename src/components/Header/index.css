@@ -1,0 +1,56 @@
+.header-container{
+    height: 10vh;
+    width: 100%;
+    background-color: rgb(246, 246, 250);
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo{
+    width: 100px;
+    background-size: cover;
+}
+.header-container1{
+    margin-left: 125px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    height: 50px;
+    width: 750px;
+    background-color: white;
+    box-shadow: 0 0 5px rgb(208, 207, 207);
+}
+.headerinput{
+    background-color: transparent;
+    border-color: transparent;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    border-width: 0px;
+    width: 100%;
+    font-size: 18px;
+    height: 50px;
+}
+.searchIcon{
+    font-size: 28px;
+    color: rgb(93, 92, 92);
+}
+.logout-button{
+    margin-left: 200px;
+    background-color: blue;
+    height: 40px;
+    width: 100px;
+    color: white;
+    border-width: 0px;
+    border-radius: 10px;
+    font-size: 20px;
+}

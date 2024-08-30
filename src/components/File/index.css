@@ -1,0 +1,156 @@
+.file-container{
+    width: 100%;
+    /* background-color: rgb(132, 132, 209); */
+    background-color: white;
+    /* margin: 10px; */
+    text-decoration: none;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.file-container0{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+.horizontal-file{
+    height: 1px;
+    border-width: 0px;
+    width: 90%;
+    background-color: black;
+}
+.file{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    width: 40%;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+.anchor{
+    text-decoration: none;
+    cursor: pointer;
+}
+.me-section{
+    display: flex;
+    flex-direction: row;
+    width: 10%;
+    justify-content: flex-start;
+    align-items: center;
+}
+.me-icon{
+    padding-right: 5px;
+    font-size: 25px;
+}
+.contact-icon{
+    padding-right: 5px;
+    font-size: 25px;
+    color: rgb(159, 159, 159);
+}
+.date-cont{
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.file-size{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.horizon{
+    text-align: left;
+    width: 10px;
+    border-width: 0px;
+    background-color: black;
+    height: 2px;
+    color: black;
+    /* align-items: center;
+     */
+}
+.file-modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.file-modal1 {
+    background: white;
+    position: fixed;
+    
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.file-modal {
+    position: fixed;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    background: white;
+    /* padding: 20px; */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    width: 200px;
+    
+    /* box-shadow: transparent;
+    background-color: transparent; */
+    /* box-sizing: border-box; */
+    /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); */
+}
+
+.file-modal-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.file-modal-close-button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.file-modal-body {
+    margin-bottom: 20px;
+}
+
+.file-modal-footer {
+    margin-top: 20px;
+    text-align: center;
+}
+.file-rename-button{
+    background-color: transparent;
+    border-width: 0px;
+    font-size: 20px;
+}

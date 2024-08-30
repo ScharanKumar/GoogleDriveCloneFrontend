@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { Switch, Route } from "react-router-dom"
+import Home from "./components/Home"
+import Register from "./components/Register"
+import Login from "./components/Login"
+import ProtectedRoute from "./components/ProtectedRoute"
+import Drive from "./components/Drive"
+import InsideFolder from "./components/InsideFolder"
 
-function App() {
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    <Switch>
+      <ProtectedRoute exact path="/" component={Home} />
+      <Route exact path="/register" component={Register} />
+      <Route exact path="/login" component={Login} />
+      <ProtectedRoute exact path="/drive" component={Drive} />
+      <ProtectedRoute exact path="/folder/:id" component={InsideFolder} />
+    </Switch>
+
+  )
 }
 
 export default App;
