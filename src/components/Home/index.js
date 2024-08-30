@@ -63,7 +63,7 @@ class Home extends Component {
         const username = Cookies.get("name");
         console.log("username" + username)
 
-        axios.get(`http://localhost:3030/all/files/${username}`)
+        axios.get(`https://googledriveclonebackend-lmpx.onrender.com/all/files/${username}`)
             .then(response => {
                 console.log(response)
                 this.setState({ files: response.data.res4 });

@@ -92,8 +92,10 @@ class InsideFolder extends Component {
 
         const username = Cookies.get("name");
         console.log("username" + username)
+        // https://googledriveclonebackend-lmpx.onrender.com
+        // http://localhost:3030
 
-        axios.get(`http://localhost:3030/folders/${id}/${username}/contents`)
+        axios.get(`https://googledriveclonebackend-lmpx.onrender.com/folders/${id}/${username}/contents`)
             .then(response => {
                 console.log(response)
                 this.setState({ files: response.data.res4, folders: response.data.res5 });

@@ -74,7 +74,7 @@ class Folder extends Component {
             "id": `${id}`,
             "username": `${username}`
         }
-        axios.put("http://localhost:3030/update/folder", data)
+        axios.put("https://googledriveclonebackend-lmpx.onrender.com/update/folder", data)
             .then(response => {
                 console.log(response)
 
@@ -123,7 +123,7 @@ class Folder extends Component {
             "id": `${id}`,
             "username": `${username}`
         }
-        axios.put("http://localhost:3030/update/folder/color", data)
+        axios.put("https://googledriveclonebackend-lmpx.onrender.com/update/folder/color", data)
             .then(response => {
                 console.log(response)
                 const { id } = this.state
@@ -148,7 +148,7 @@ class Folder extends Component {
             "id": `${id}`,
             "username": `${username}`
         }
-        axios.put("http://localhost:3030/update/folder/color", data)
+        axios.put("https://googledriveclonebackend-lmpx.onrender.com/update/folder/color", data)
             .then(response => {
                 console.log(response)
                 const { id } = this.state
@@ -173,7 +173,7 @@ class Folder extends Component {
             "id": `${id}`,
             "username": `${username}`
         }
-        axios.put("http://localhost:3030/update/folder/color", data)
+        axios.put("https://googledriveclonebackend-lmpx.onrender.com/update/folder/color", data)
             .then(response => {
                 console.log(response)
                 const { id } = this.state
@@ -198,7 +198,7 @@ class Folder extends Component {
             "id": `${id}`,
             "username": `${username}`
         }
-        axios.put("http://localhost:3030/update/folder/color", data)
+        axios.put("https://googledriveclonebackend-lmpx.onrender.com/update/folder/color", data)
             .then(response => {
                 console.log(response)
                 const { id } = this.state

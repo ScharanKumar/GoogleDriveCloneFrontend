@@ -26,7 +26,7 @@ class File extends Component {
             "id": `${id}`,
             "username": `${username}`
         }
-        axios.put("http://localhost:3030/update/files", data)
+        axios.put("https://googledriveclonebackend-lmpx.onrender.com/update/files", data)
             .then(response => {
                 console.log(response)
 

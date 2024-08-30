@@ -18,6 +18,24 @@ import axios from "axios"
 class Leftbar extends Component {
     state = { pop: false, selectedFile: null, create: "", pop1: false }
 
+    // componentDidMount() {
+    //     // Add click event listener to the document
+    //     // document.addEventListener('mousedown', this.handleClickOutside);
+    //   }
+    
+    //   componentWillUnmount() {
+    //     // Remove click event listener from the document
+    //     document.removeEventListener('mousedown', this.handleClickOutside);
+    //   }
+    
+    //   handleClickOutside = (event) => {
+    //     // Check if the click is outside the element
+    //     if (this.state.wrapperRef.current && !this.state.wrapperRef.current.contains(event.target)) {
+    //         this.setState((prevState) => ({ pop: !prevState.pop }))
+    //       // You can add your custom logic here, e.g., closing a modal
+    //     }
+    //   };
+
     onFileChange = (event) => {
         console.log("Baby" + this.props.folder_id)
         this.setState({ selectedFile: event.target.files[0] });
@@ -32,7 +50,7 @@ class Leftbar extends Component {
 
         formData.append("file", this.state.selectedFile);
 
-        axios.post(`http://localhost:3030/upload/${folder_id}/${date}/${username}`, formData)
+        axios.post(`https://googledriveclonebackend-lmpx.onrender.com/upload/${folder_id}/${date}/${username}`, formData)
             .then(response => {
 
                 this.setState({ selectedFile: null });
@@ -60,7 +78,7 @@ class Leftbar extends Component {
 
         }
 
-        axios.post("http://localhost:3030/folders", data)
+        axios.post("https://googledriveclonebackend-lmpx.onrender.com/folders", data)
             .then(response => {
                 this.setState({ create: "" });
                 fetchFiles(this.props.folder_id)
@@ -84,6 +102,7 @@ class Leftbar extends Component {
 
     modal = () => {
         this.setState((prevState) => ({ pop: !prevState.pop }))
+        
     }
     folder_name = (event) => {
         this.setState({ create: event.target.value })
@@ -95,7 +114,7 @@ class Leftbar extends Component {
             <div className="leftbarCon1">
                 {pop &&
                     // <div className="modal-backdrop">
-                    <div className="left-modal">
+                    <div className="left-modal" >
                         <div className="modal-header">
                             <h4>Menu bar</h4>
                             <button onClick={this.modal} className="modal-close-button">X</button>

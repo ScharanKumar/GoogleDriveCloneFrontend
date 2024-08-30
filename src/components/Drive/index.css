@@ -45,7 +45,7 @@
     box-sizing: border-box;
     /* display: none; */
     width: 25px;
-    overflow: hidden;
+    overflow:hidden;
     /* opacity: 0; Initially invisible but still takes up space */
   /* transition: opacity 0.3s ease;  */
     /* display: none; */
